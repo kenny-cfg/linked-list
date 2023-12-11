@@ -2,7 +2,7 @@ from typing import Optional
 
 
 class Node[T]:
-    def __init__(self, data: T, next_value: Optional):
+    def __init__(self, data: T, next_value: Optional["Node"]):  # Exercise, restrict next_value to Optional[Node[T]]
         self.data = data
         self.next_value = next_value
 
