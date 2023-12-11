@@ -18,6 +18,5 @@ class TestLinkedList(unittest.TestCase):
         self.assertEqual(linked_list.length(), 3)
 
 
-
 if __name__ == '__main__':
     unittest.main()
