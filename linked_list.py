@@ -13,9 +13,6 @@ class LinkedList:
         self.head_node.append(new_node)
 
     def length(self):
-        length_so_far = 0
-        current_node = self.head_node
-        while current_node is not None:
-            length_so_far += 1
-            current_node = current_node.next()
-        return length_so_far
+        if self.head_node is None:
+            return 0
+        return self.head_node.length()

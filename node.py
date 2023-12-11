@@ -11,3 +11,8 @@ class Node:
             self.next_value = node
         else:
             self.next_value.append(node)
+
+    def length(self):
+        if self.next_value is None:
+            return 1
+        return 1 + self.next_value.length()
